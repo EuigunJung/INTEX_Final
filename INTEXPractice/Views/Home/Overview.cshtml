@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Overview Page";
+}
+
+@model List<INTEXPractice.Models.Crash>
+
+<div class="text-center">
+    <h1 class="display-4">Utah Motor Vehicle Collision Data Overview</h1><br /><br />
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr class="table-info text-center">
+            <td>Crash ID</td>
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+        @foreach (Crash b in Model)
+        {
+            <tr>
+                <td>@b.CRASH_ID</td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
