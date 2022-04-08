@@ -35,7 +35,7 @@ namespace INTEXPractice
             });
 
             services.AddSingleton<InferenceSession>(
-            new InferenceSession("INTEX2_7.onnx"));
+            new InferenceSession("wwwroot/INTEX2_7.onnx"));
 
             services.AddRazorPages();
 
