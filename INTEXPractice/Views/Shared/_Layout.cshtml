@@ -26,28 +26,28 @@
                     <partial name="_LoginPartial" />
 
                     @*@if (SignInManager.IsSignedIn(User))
-                    {*@
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Overview">Data Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Inference" asp-action="EnterData">Calculator</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Tableau">Tableau</a>
-                    </li>
+                        {*@
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Overview">Data Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Inference" asp-action="EnterData">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Tableau">Tableau</a>
+                        </li>
 
-                    @*@if (User.IsInRole("Administrator"))
-        {*@
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="">Admin</a>
-                    </li>
-                    @*}*@
-                </ul>
+                        @*@if (User.IsInRole("Administrator"))
+                            {*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="">Admin</a>
+                        </li>
+                        @*}*@
+                    </ul>
                     @*}*@
                 </div>
             </div>
@@ -58,6 +58,16 @@
             @RenderBody()
         </main>
     </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <p>
+                    Yeet! &copy; 2022 G2_7 - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//www.shift4shop.com/lp/cookie-law-generator/cookie.js?skin=cookielaw4&amp;animation=shake2&amp;delay=4&amp;msg=We%20use%20cookies%20to%20understand%20how%20you%20use%20our%20site%20and%20to%20improve%20your%20experience.%20This%20includes%20personalizing%20content%20and%20advertising.%20&amp;learnmore=&amp;morelink=&amp;accept_radius=1"></script> 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
