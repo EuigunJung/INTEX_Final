@@ -1,0 +1,22 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "INTEXPractice",
+    "environment"    : "YEET",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0959a7b558f7c57a9\";\"aws:ec2:vpc,Subnets\"=\"subnet-0d001e51d0cafbe5b\";\"aws:ec2:vpc,ELBSubnets\"=\"subnet-0d001e51d0cafbe5b,subnet-0386f6b3afa61d136,subnet-046f75e7e58f30ebb,subnet-0ac343e92732636ef,subnet-0b7d0e54039d6510d,subnet-039292896ee4c7794\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.3.0 running .NET Core",
+    "environment-type"     : "LoadBalanced",
+    "loadbalancer-type"    : "application",
+    "cname"                : "yeet",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "health-check-url"     : "/",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
