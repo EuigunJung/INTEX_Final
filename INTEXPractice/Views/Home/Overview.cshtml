@@ -12,6 +12,30 @@
     <thead>
         <tr class="table-info text-center">
             <td>Crash ID</td>
+            <td>CRASH DATETIME</td>
+            <td>ROUTE</td>
+            <td>CITY</td>
+            <td>COUNTY NAME</td>
+            <td>CRASH SEVERITY ID</td>
+            <td>WORK ZONE RELATED</td>
+            <td>PEDESTRIAN INVOLVED</td>
+            <td>BICYCLIST INVOLVED</td>
+            <td>MOTORCYCLE INVOLVED</td>
+            <td>IMPROPER RESTRAINT</td>
+            <td>UNRESTRAINED</td>
+            <td>DUI</td>
+            <td>INTERSECTION RELATED</td>
+            <td>WILD ANIMAL RELATED</td>
+            <td>DOMESTIC ANIMAL RELATED</td>
+            <td>OVERTURN ROLLOVER</td>
+            <td>COMMERCIAL MOTOR VEHICLE INVOLVED</td>
+            <td>TEENAGE DRIVER INVOLVED</td>
+            <td>OLDER DRIVER INVOLVED</td>
+            <td>NIGHT DARK CONDITION</td>
+            <td>SINGLE VEHICLE</td>
+            <td>DISTRACTED DRIVING</td>
+            <td>DROWSY DRIVING</td>
+            <td>ROADWAY DEPARTURE</td>
         </tr>
     </thead>
 
@@ -20,10 +44,35 @@
 
         @foreach (Crash b in Model)
         {
-            <tr>
-                <td>@b.CRASH_ID</td>
-
-            </tr>
+        <tr>
+            <td>@b.CRASH_ID</td>
+            <td>@b.CRASH_DATETIME</td>
+            <td>@b.ROUTE</td>
+            <td>@b.CITY</td>
+            <td>@b.COUNTY_NAME</td>
+            <td>@b.CRASH_SEVERITY_ID</td>
+            <td>@b.WORK_ZONE_RELATED<td>
+            <td>@b.PEDESTRIAN_INVOLVED</td>
+            <td>@b.BICYCLIST_INVOLVED</td>
+            <td>@b.MOTORCYCLE_INVOLVED</td>
+            <td>@b.IMPROPER_RESTRAINT<td>
+            <td>@b.UNRESTRAINED</td>
+            <td>@b.DUI</td>
+            <td>@b.INTERSECTION_RELATED</td>
+            <td>@b.WILD_ANIMAL_RELATED</td>
+            <td>@b.DOMESTIC_ANIMAL_RELATED</td>
+            <td>@b.OVERTURN_ROLLOVER</td>
+            <td>@b.COMMERCIAL_MOTOR_VEH_INVOLVED</td>
+            <td>@b.TEENAGE_DRIVER_INVOLVED</td>
+            <td>@b.OLDER_DRIVER_INVOLVED</td>
+            <td>@b.NIGHT_DARK_CONDITION</td>
+            <td>@b.SINGLE_VEHICLE</td>
+            <td>@b.DISTRACTED_DRIVING</td>
+            <td>@b.DROWSY_DRIVING</td>
+            <td>@b.ROADWAY_DEPARTURE</td>
+            <td><a asp-controller="Home" asp-action="Edit" asp-route-applicationid="@b.CRASH_ID">Edit</a></td>
+            <td><a asp-controller="Home" asp-action="Delete" asp-route-applicationid="@b.CRASH_ID">Delete</a></td>
+        </tr>
         }
 
     </tbody>
