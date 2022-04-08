@@ -4,25 +4,27 @@
 
 @model CrashData
 
+<h2> Please complete the form by entering 0 or 1 into the box ( 1 = Yes, 0 = No)</h2>
+<br />
 
 <form method="post" asp-controller="Inference" asp-action="Score">
 
-    <div><label>Pedestrian Involved?</label><input asp-for="pedestrian_involved_True" value="0" /></div>
-    <div><label>Bicyclist Involved?</label><input asp-for="bicyclist_involved_True" value="0" /></div>
-    <div><label>Motorcycled Involved?</label><input asp-for="motorcycle_involved_True" value="0" /></div>
-    <div><label>Improperly Restrained?</label><input asp-for="improper_restraint_True" value="0" /></div>
-    <div><label>Unrestrained?</label><input asp-for="unrestrained_True" value="0" /></div>
-    <div><label>DUI?</label><input asp-for="dui_True" value="0" /></div>
-    <div><label>Intersection Related?</label><input asp-for="intersection_related_True" value="0" /></div>
-    <div><label>Wild Animal Involved?</label><input asp-for="wild_animal_related_True" value="0" /></div>
-    <div><label>Overturn Rollover?</label><input asp-for="overturn_rollover_True" value="0" /></div>
-    <div><label>Commercial Motor Vehicle Involved?</label><input asp-for="commercial_motor_veh_involved_True" value="0" /></div>
-    <div><label>Older Driver Involved?</label><input asp-for="older_driver_involved_True" value="0" /></div>
-    <div><label>Single Vehicle?</label><input asp-for="single_vehicle_True" value="0" /></div>
-    <div><label>Distracted Driving?</label><input asp-for="distracted_driving_True" value="0" /></div>
-    <div><label>Drowsy Driving?</label><input asp-for="drowsy_driving_True" value="0" /></div>
-    <div><label>Roadway Departure?</label><input asp-for="roadway_departure_True" value="0" /></div>
+    <div><label>Pedestrian Involved?</label><input  class="form-control" asp-for="pedestrian_involved_True" value="0" /></div>
+    <div><label>Bicyclist Involved?</label><input class="form-control" asp-for="bicyclist_involved_True" value="0" /></div>
+    <div><label>Motorcycled Involved?</label><input  class="form-control"asp-for="motorcycle_involved_True" value="0" /></div>
+    <div><label>Improperly Restrained?</label><input  class="form-control" asp-for="improper_restraint_True" value="0" /></div>
+    <div><label>Unrestrained?</label><input class="form-control" asp-for="unrestrained_True" value="0" /></div>
+    <div><label>DUI?</label><input  class="form-control" asp-for="dui_True" value="0" /></div>
+    <div><label>Intersection Related?</label><input class="form-control" asp-for="intersection_related_True" value="0" /></div>
+    <div><label>Wild Animal Involved?</label><input class="form-control" asp-for="wild_animal_related_True" value="0" /></div>
+    <div><label>Overturn Rollover?</label><input class="form-control" asp-for="overturn_rollover_True" value="0" /></div>
+    <div><label>Commercial Motor Vehicle Involved?</label><input class="form-control" asp-for="commercial_motor_veh_involved_True" value="0" /></div>
+    <div><label>Older Driver Involved?</label><input class="form-control" asp-for="older_driver_involved_True" value="0" /></div>
+    <div><label>Single Vehicle?</label><input class="form-control" asp-for="single_vehicle_True" value="0" /></div>
+    <div><label>Distracted Driving?</label><input class="form-control" asp-for="distracted_driving_True" value="0" /></div>
+    <div><label>Drowsy Driving?</label><input class="form-control" asp-for="drowsy_driving_True" value="0" /></div>
+    <div><label>Roadway Departure?</label><input class="form-control" asp-for="roadway_departure_True" value="0" /></div>
 
 
-    <button type="submit">Calculate</button>
+    <button type="submit" class="btn btn-primary mb-2">Calculate</button>
 </form>
