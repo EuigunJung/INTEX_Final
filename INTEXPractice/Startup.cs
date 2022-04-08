@@ -74,24 +74,15 @@ namespace INTEXPractice
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //endpoints.MapControllerRoute("typePage",
-            //    "{category}/Page{pageNum}",
-            //    new { Controller = "Home", action = "Index" });
-
-            //endpoints.MapControllerRoute("Paging",
-            //    "Page{pageNum}",
-            //    new { Controller = "Home", action = "Index", pageNum = 1 });
-
-            //endpoints.MapControllerRoute("type",
-            //    "{category}",
-            //    new { Controller = "Home", action = "Index", pageNum = 1 });
-
-            //endpoints.MapDefaultControllerRoute();
-
-            //endpoints.MapRazorPages();
-
-            //endpoints.MapBlazorHub();
-            //endpoints.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
+            //Enable CSP HTTP header
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("Content - Security - Policy",
+                    "script-src 'self';" +
+                    "style-src 'self'; " +
+                    "img-src 'self'");
+                await next();
+            });
         }
     }
 }

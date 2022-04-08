@@ -1,6 +1,7 @@
 ﻿using Microsoft.ML.OnnxRuntime.Tensors;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,20 +10,50 @@ namespace INTEXPractice.Models
     public class CrashData
     {
         //public int crash_severity_id { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+    
         public float pedestrian_involved_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+       
         public float bicyclist_involved_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+    
         public float motorcycle_involved_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+       
         public float improper_restraint_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+ 
         public float unrestrained_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+  
         public float dui_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+  
         public float intersection_related_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+     
         public float wild_animal_related_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+      
         public float overturn_rollover_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+     
         public float commercial_motor_veh_involved_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+  
         public float older_driver_involved_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+       
         public float single_vehicle_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+     
         public float distracted_driving_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+
         public float drowsy_driving_True { get; set; }
+        [Required(ErrorMessage = " Please enter a valid crash sererity level.")]
+ 
         public float roadway_departure_True { get; set; }
 
 
